@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> CORETTA ACESSÓRIOS </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="author" content="BRENDA AXEL">
+    <meta name="description" content="AULA DIA 4 DE FEVEREIRO">
+    <meta name="keywords" content="CORETTA,CSS,Projeto, Educafro, Aula, Acessórios,">
+
+    <!-- Arquivo CSS aqui -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"><link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div id="banner">
+            <h1>
+                <a href="index.html"><img  src="imagem/logo.jpg" alt="LOGO"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="sobre.html" data-text="SOBRE">QUEM SOMOS</a></li>
+                    <li><a href="https://www.google.com.br/maps/search/lojas+americanas/@-23.5330364,-46.6391472,14z/data=!3m1!4b1" data-text="FILIAIS" target="_blank">NOSSAS LOJAS</a></li>
+                    <li><a href="cadastre.html" data-text="CADASTRE-SE">CADASTRE-SE</a></li>
+                    <li><a href="curriculo.html" data-text="CURRICULO">TRABALHE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br>
+<p><a id="maisprodutos"> </a></p>
+    
+    <br>
+
+
+
+    <h2> CARRINHO </h2>
+
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+
+            <h1 class="display-4">Ótima escolha!</h1>
+            <p class="lead">Obrigado por comprar na Coretta Acessórios!
+                Preencha seus dados para efetivar a compra.</p>
+        </div><!-- fim .container dentro do jumbotron -->
+    </div><!-- fim .jumbotron -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xl-3">
+                <dd id="preco">R$ 39,90</dd>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="qtd">Quantidade:</label>
+                            <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="total">Total:</label>
+                            <output id="total" class="form-control">R$ 39,90</output>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <img src="imagem/produtos/aneis.jpg" alt="Fuzzy Cardigan" class="img-thumbnail mb-3">
+                <dl>
+                    <dt>Produto</dt>
+                    <dd>Anel </dd>
+                    <dt>Cor</dt>
+                    <dd>Dourado</dd>
+                    <dt>Tamanho</dt>
+                    <dd>19</dd>
+                    <dt>Preço</dt>
+                    <dd>R$ 39,90</dd>
+                </dl>
+            </div><!-- fim .card-body -->
+        </div><!-- fim .card -->
+        <form class="col-md-8 col-xl-9">
+            <div class="row">
+                <fieldset class="col-lg-6">
+                    <legend>Dados pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="email@exemplo.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                data-mask="999.999.999-99" required>
+                        </div>
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                            <label class="custom-control-label" for="newsletter">
+                                Quero receber Newsletter da Coretta
+                            </label>
+                        </div>
+                </fieldset>
+                <fieldset class="col-lg-6">
+                    <legend>Cartão de crédito</legend>
+                    <div class="form-group">
+                        <label for="numero-cartao">Número - CVV</label>
+                        <input type="text" class="form-control" id="numero-cartao" name="numero-cartao"
+                            data-mask="9999 9999 9999 9999 - 999">
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="bandeira-cartao">Bandeira</label>
+                            </div>
+                            <select class="custom-select" id="bandeira-cartao">
+                                <option disabled selected>Selecione uma opção...</option>
+                                <option value="master">MasterCard</option>
+                                <option value="visa">VISA</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validade-cartao">Validade</label>
+                        <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <span class="oi oi-thumb-up"></span>
+                Confirmar Pedido
+            </button>
+        </form>
+    </div> <!-- fim .row -->
+    </div><!-- fim .container da pagina -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/inputmask-plugin.js"></script>
+    <script type="text/javascript" src="js/total.js"></script>
+<br><br><br><br><br>
